@@ -19,10 +19,11 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
+      <div class="header-container">
         <nav class="header-navigation">
           <a class="header-title link" href="./index.html"
             >Web<span class="header-title-half">Studio</span></a
@@ -55,6 +56,99 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open-btn">
+          <svg class="charm-menu-hamburger" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu">
+        <div>
+        <button type="button" class="menu-close-btn">
+          <svg class="menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link current link" href="./index.html">Studio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <address class="mob-menu-address">
+              <ul class="mob-menu-address-list list">
+              <li class="mob-menu-address-item">
+                <a class="mob-menu-tel-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+                <li class="mob-menu-address-item">
+                  <a
+                    class="mob-menu-address-link link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="mob-icon-list">
+            <li class="mob-icon-item">
+              <a
+                href=""
+                class="mob-icon-link link"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="mob-soc-icons" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icon-item">
+              <a
+                href=""
+                class="mob-icon-link link"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="mob-soc-icons" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icon-item">
+              <a
+                href=""
+                class="mob-icon-link link"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="mob-soc-icons" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icon-item">
+              <a
+                href=""
+                class="mob-icon-link link"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="mob-soc-icons" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -69,7 +163,7 @@
       </section>
 
       <section class="goal">
-        <div class="container">
+        <div class="container container-goal">
           <h2 class="visually-hidden goal-title-one">Our goal</h2>
           <ul class="goal-list list">
             <li class="goal-item">
@@ -125,12 +219,13 @@
       </section>
 
       <section class="about">
-        <div class="container">
+        <div class="container-about">
           <h2 class="about-title top-title">What are we doing</h2>
           <ul class="about-list list">
             <li class="about-item">
               <img
                 class="about-pic"
+                srcset="./images/img1.jpg 1x, ./images/img1-2x 2x.jpg"
                 src="./images/img1.jpg"
                 alt="Technologies"
                 width="360"
@@ -140,6 +235,7 @@
             <li class="about-item">
               <img
                 class="about-pic"
+                srcset="./images/img2.jpg 1x, ./images/img2-2x 2x.jpg"
                 src="./images/img2.jpg"
                 alt="Technologies"
                 width="360"
@@ -149,6 +245,7 @@
             <li class="about-item">
               <img
                 class="about-pic"
+                srcset="./images/img3.jpg 1x, ./images/img3-2x 2x.jpg"
                 src="./images/img3.jpg"
                 alt="Technologies"
                 width="360"
@@ -160,18 +257,18 @@
       </section>
 
       <section class="team">
-        <div class="container">
-          <h2 class="team-title top-title">Our Team</h2>
+        <div class="container container-team">
+          <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
               <img
-                src="./images/img(1).jpg"
+                src="./images/first-employee.jpg"
                 alt="our team"
                 width="264"
                 height="260"
               />
               <div class="team-wrap">
-                <h3 class="secondary-title">Mark Guerrero</h3>
+                <h3 class="team-title-name">Mark Guerrero</h3>
                 <p class="team-text top-text">Product Designer</p>
                 <ul class="team-icon-list list">
                   <li class="team-icon-item">
@@ -227,13 +324,13 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/img(2).jpg"
+                src="./images/second-employee.jpg"
                 alt="our team"
                 width="264"
                 height="260"
               />
               <div class="team-wrap">
-                <h3 class="secondary-title">Tom Ford</h3>
+                <h3 class="team-title-name">Tom Ford</h3>
                 <p class="team-text top-text">Frontend Developer</p>
                 <ul class="team-icon-list list">
                   <li class="team-icon-item">
@@ -289,13 +386,13 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/img(3).jpg"
+                src="./images/third-employee.jpg"
                 alt="our team"
                 width="264"
                 height="260"
               />
               <div class="team-wrap">
-                <h3 class="secondary-title">Camila Garcia</h3>
+                <h3 class="team-title-name">Camila Garcia</h3>
                 <p class="team-text top-text">Marketing</p>
                 <ul class="team-icon-list list">
                   <li class="team-icon-item">
@@ -351,13 +448,13 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/img(4).jpg"
+                src="./images/fourth-employee.jpg"
                 alt="our team"
                 width="264"
                 height="260"
               />
               <div class="team-wrap">
-                <h3 class="secondary-title">Daniel Wilson</h3>
+                <h3 class="team-title-name">Daniel Wilson</h3>
                 <p class="team-text top-text">UI Designer</p>
                 <ul class="team-icon-list list">
                   <li class="team-icon-item">
@@ -414,8 +511,9 @@
           </ul>
         </div>
       </section>
+
       <section class="customers">
-        <div class="container">
+        <div class="container container-customers">
           <h2 class="customers-title top-title">Customers</h2>
           <ul class="customers-list list">
             <li class="customers-item">
@@ -459,7 +557,7 @@
         </div>
       </section>
     </main>
-
+    
     <footer class="footer">
       <div class="container icon-container">
         <div class="footer-container">
@@ -616,7 +714,8 @@
                 <svg class="check-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use></svg
               ></span>
-              I accept the terms and conditions of the <a href="" class="check-link"> Privacy Policy</a></label
+              I accept the terms and conditions of the
+              <a href="" class="check-link"> Privacy Policy</a></label
             >
           </div>
           <button type="submit" class="modal-btn">Send</button>
