@@ -6,6 +6,9 @@
     .container {
         max-width: 398px;
     }
+    .header {
+      min-width: 320px;
+    }
     .container-goal {
         max-width: 398px;
         margin: 0 auto
@@ -167,6 +170,9 @@
    .menu-open-btn {
      display: none;
    }
+   .footer-label {
+     max-width: 264px;
+   }
 }
 
 
@@ -189,6 +195,7 @@
       letter-spacing: 0.02em;
     }
     .hero {
+      padding: 0;
         background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)
@@ -217,6 +224,7 @@
         max-width: 1128px;
     }
     .goal {
+      padding-top: 0;
         padding-bottom: 0;
     }
     .goal-list {
@@ -268,14 +276,12 @@
       width: calc((100% - 72px) / 4);
   }
   .container-team {
+    padding: 0;
     max-width: 1128px;
-  }
-  .customers {
-    padding-top: 120px;
-    padding-bottom: 120px;
   }
   
   .container-customers {
+    padding: 0;
       max-width: 1128px;
   }
   .customers-list {
@@ -285,13 +291,12 @@
   .customers-item {
     width: 100%;
   }
-  .footer {
-     padding: 100px 0 100px;
-  }
+  
 .footer-text {
   max-width: 1128px;
 }
   .icon-container {
+    padding: 0;
       max-width: 1128px ;
       flex-wrap: nowrap;
       gap: 120px;
