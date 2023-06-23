@@ -1,11 +1,12 @@
 @media screen and (min-width:428px){
-    .hero-title {
-        max-width: 320px;
-        margin-bottom: 72px;
-    }
+
     .container {
-        max-width: 398px;
+        padding: 0 15px;
     }
+    .modal {
+      max-width: 90%;
+    }
+  
     .header {
       min-width: 320px;
     }
@@ -20,6 +21,7 @@
         justify-content: left;
         gap: 56px;
     }
+   
 
 }
 
@@ -94,6 +96,11 @@
     line-height: 1.17;
     letter-spacing: 0.04em;
   }
+  .modal {
+    width: 408px;
+    padding: 72px 24px 24px 24px;
+  }
+
     .hero {
         background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),
@@ -116,13 +123,15 @@
   }
 }
     .hero-title {
-        font-size: 52px;
+        font-size: 56px;
         max-width: 496px;
-        margin-bottom: 36px;
     }
-    .container {
+    .container-hero {
+      gap: 36px;
+    }
+    /* .container {
         max-width: 552px;
-    }
+    } */
     .container-goal{
        padding: 0 15px 0 15px;
        max-width: 738px;
@@ -181,8 +190,7 @@
 
 @media screen and (min-width:1158px){
     .container {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        max-width: 1128px;
     }
     .header-container {
       max-width: 1128px;
@@ -198,7 +206,8 @@
       letter-spacing: 0.02em;
     }
     .hero {
-      padding: 0;
+      padding-top: 188px;
+      padding-bottom: 188px;
         background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)
@@ -220,15 +229,17 @@
   }
 }
     .hero-title {
-        font-size: 52px;
-        margin-bottom: 48px;
+        font-size: 56px;
+    }
+    .container-hero {
+      gap: 48px;
     }
     .container-goal {
         max-width: 1128px;
     }
     .goal {
-      padding-top: 0;
-        padding-bottom: 0;
+      padding-top: 120px;
+      padding-bottom: 120px;
     }
     .goal-list {
         flex-wrap: nowrap;
@@ -279,7 +290,6 @@
       width: calc((100% - 72px) / 4);
   }
   .container-team {
-    padding: 0;
     max-width: 1128px;
   }
   
@@ -308,3 +318,7 @@
   .container-navigation {
     max-width: 1128px;
   }
+.navigation-btn-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}

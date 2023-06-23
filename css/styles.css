@@ -85,7 +85,6 @@ img {
 /* HEADER */
 
 .header {
-  width: 100%;
   height: 70px;
   color: #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -221,7 +220,7 @@ img {
   background-color: transparent;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
@@ -298,8 +297,8 @@ color:var(--second-text-color);
 
 .mob-icon-list {
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  justify-content: flex-start;
+  gap: 24px;
 }
 
 .team-soc-icons {
@@ -320,7 +319,7 @@ color:var(--second-text-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
+
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -335,12 +334,12 @@ color:var(--second-text-color);
 }
 
 .hero-title {
-  font-size: 32px;
+  font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 72px;
+  max-width: 320px;
  margin: 0 auto;
 }
 
@@ -368,6 +367,13 @@ color:var(--second-text-color);
 
 .hero-btn:focus {
   background-color: var(--hightlight-color);
+}
+
+.container-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
 }
 
 /* GOAL */
@@ -548,8 +554,6 @@ margin-bottom: 8px;
   justify-content: center;
   color: #8e8f99;
   transition-property: transform;
-  /* transition-duration: 250ms;
-  transition-timing-function:var(--transition-timing); */
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -867,18 +871,17 @@ margin-bottom: 8px;
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 392px;
+    min-height: 584px;
+    padding: 72px 16px 24px 16px;
+    background-color: #fcfcfc;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 408px;
-  min-height: 584px;
-  border-radius: 4px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  background-color: #fcfcfc;
-  padding: 72px 24px 24px 24px;
 }
 
 .backdrop.is-hidden .modal {
