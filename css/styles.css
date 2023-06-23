@@ -784,10 +784,9 @@ margin-bottom: 8px;
   margin-bottom: 72px;
 }
 
-/* .navigation-btn-item {
-  display: block;
-  margin: 0 auto;
-} */
+.navigation-btn-section {
+  padding: 0;
+}
 
 .navigation-wrap {
   padding: 32px 16px;
