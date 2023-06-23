@@ -173,6 +173,9 @@
    .footer-label {
      max-width: 264px;
    }
+   .container-navigation {
+    max-width: 582px;
+  }
 }
 
 
