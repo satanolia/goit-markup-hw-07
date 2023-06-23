@@ -302,3 +302,6 @@
       gap: 120px;
   }
  
+  .container-navigation {
+    max-width: 1128px;
+  }
