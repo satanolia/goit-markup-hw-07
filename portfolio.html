@@ -33,7 +33,9 @@
               <a class="header-link link" href="./index.html">Studio</a>
             </li>
             <li class="header-item">
-              <a class="header-link current link" href="./portfolio.html">Portfolio</a>
+              <a class="header-link current link" href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
             <li class="header-item">
               <a class="header-link link" href="">Contacts</a>
@@ -64,41 +66,45 @@
       </div>
       <div class="mob-menu is-hidden" data-menu>
         <div>
-        <button type="button" class="menu-close-btn" data-menu-close>
-          <svg class="menu-close-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-            <ul class="mob-menu-list list">
-              <li class="mob-menu-item">
-                <a class="mob-menu-link current link" href="./index.html">Studio</a>
-              </li>
-              <li class="mob-menu-item">
-                <a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
-              </li>
-              <li class="mob-menu-item">
-                <a class="mob-menu-link link" href="">Contacts</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <address class="mob-menu-address">
-              <ul class="mob-menu-address-list list">
+          <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link current link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <address class="mob-menu-address">
+            <ul class="mob-menu-address-list list">
               <li class="mob-menu-address-item">
                 <a class="mob-menu-tel-link link" href="tel:+110001111111"
                   >+11 (000) 111-11-11</a
                 >
               </li>
-                <li class="mob-menu-address-item">
-                  <a
-                    class="mob-menu-address-link link"
-                    href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
-                </li>
-              </ul>
-            </address>
-            <ul class="mob-icon-list">
+              <li class="mob-menu-address-item">
+                <a
+                  class="mob-menu-address-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-icon-list">
             <li class="mob-icon-item">
               <a
                 href=""
@@ -173,10 +179,33 @@
             <li class="images-item">
               <a href="" class="images-link link">
                 <div class="images-wrap">
-                  <img
-                    src="./images/portfolio/first_row_1.jpg"
-                    alt="Banking App Interface Concept"
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/first_row_1.jpg    1x,
+                        ./images/portfolio/first_row_1_2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                    srcset="
+                      ./images/portfolio/first_row_1_tab.jpg    1x,
+                      ./images/portfolio/first_row_1_tab_2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
                   />
+                  <source
+                  srcset="
+                    ./images/portfolio/first_row_1_mob.jpg    1x,
+                    ./images/portfolio/first_row_1_mob_2x.jpg 2x
+                  "
+                  media="(min-width: 428px)"
+                />
+                  <img
+                  src="./images/portfolio/first_row_1_mob.jpg"
+                  alt="Banking App Interface Concept"
+                  />
+                  </picture>
                   <p class="images-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -184,7 +213,9 @@
                   </p>
                 </div>
                 <div class="navigation-wrap">
-                  <h2 class="secondary-title">Banking App Interface Concept</h2>
+                  <h2 class="navigation-title">
+                    Banking App Interface Concept
+                  </h2>
                   <p class="top-text">App</p>
                 </div></a
               >
@@ -192,10 +223,33 @@
             <li class="images-item">
               <a href="" class="images-link link">
                 <div class="images-wrap">
-                  <img
-                    src="./images/portfolio/first_row_2.jpg"
-                    alt="Cashless Payment"
+                  <picture>
+                    <source
+                    srcset="
+                      ./images/portfolio/first_row_2.jpg    1x,
+                      ./images/portfolio/first_row_2_2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
                   />
+                  <source
+                  srcset="
+                    ./images/portfolio/first_row_2_tab.jpg    1x,
+                    ./images/portfolio/first_row_2_tab_2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                srcset="
+                  ./images/portfolio/first_row_2_mob.jpg    1x,
+                  ./images/portfolio/first_row_2_mob_2x.jpg 2x
+                "
+                media="(min-width: 428px)"
+              />
+              <img
+              src="./images/portfolio/first_row_2_mob.jpg"
+              alt="Cashless Payment"
+            />
+                  </picture>
                   <p class="images-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -203,7 +257,7 @@
                   </p>
                 </div>
                 <div class="navigation-wrap">
-                  <h2 class="secondary-title">Cashless Payment</h2>
+                  <h2 class="navigation-title">Cashless Payment</h2>
                   <p class="top-text">Marketing</p>
                 </div></a
               >
@@ -211,6 +265,29 @@
             <li class="images-item">
               <a href="" class="images-link link">
                 <div class="images-wrap">
+                  <picture>
+                    <source
+                    srcset="
+                      ./images/portfolio/first_row_2.jpg    1x,
+                      ./images/portfolio/first_row_2_2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                  srcset="
+                    ./images/portfolio/first_row_2_tab.jpg    1x,
+                    ./images/portfolio/first_row_2_tab_2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                srcset="
+                  ./images/portfolio/first_row_2_mob.jpg    1x,
+                  ./images/portfolio/first_row_2_mob_2x.jpg 2x
+                "
+                media="(min-width: 428px)"
+              />
+                  </picture>
                   <img
                     src="./images/portfolio/first_row_3.jpg"
                     alt="Meditation App"
@@ -222,7 +299,7 @@
                   </p>
                 </div>
                 <div class="navigation-wrap">
-                  <h2 class="secondary-title">Meditation App</h2>
+                  <h2 class="navigation-title">Meditation App</h2>
                   <p class="top-text">App</p>
                 </div></a
               >
@@ -230,6 +307,29 @@
             <li class="images-item">
               <a href="" class="images-link link">
                 <div class="images-wrap">
+                  <picture>
+                    <source
+                    srcset="
+                      ./images/portfolio/first_row_2.jpg    1x,
+                      ./images/portfolio/first_row_2_2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                  srcset="
+                    ./images/portfolio/first_row_2_tab.jpg    1x,
+                    ./images/portfolio/first_row_2_tab_2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                srcset="
+                  ./images/portfolio/first_row_2_mob.jpg    1x,
+                  ./images/portfolio/first_row_2_mob_2x.jpg 2x
+                "
+                media="(min-width: 428px)"
+              />
+                  </picture>
                   <img
                     src="./images/portfolio/second_row_1.jpg"
                     alt="Taxi Service"
@@ -241,7 +341,7 @@
                   </p>
                 </div>
                 <div class="navigation-wrap">
-                  <h2 class="secondary-title">Taxi Service</h2>
+                  <h2 class="navigation-title">Taxi Service</h2>
                   <p class="top-text">Marketing</p>
                 </div></a
               >
@@ -260,7 +360,7 @@
                   </p>
                 </div>
                 <div class="navigation-wrap">
-                  <h2 class="secondary-title">Screen Illustrations</h2>
+                  <h2 class="navigation-title">Screen Illustrations</h2>
                   <p class="top-text">Design</p>
                 </div></a
               >
@@ -268,6 +368,29 @@
             <li class="images-item">
               <a href="" class="images-link link">
                 <div class="images-wrap">
+                  <picture>
+                    <source
+                    srcset="
+                      ./images/portfolio/first_row_2.jpg    1x,
+                      ./images/portfolio/first_row_2_2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                  srcset="
+                    ./images/portfolio/first_row_2_tab.jpg    1x,
+                    ./images/portfolio/first_row_2_tab_2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                srcset="
+                  ./images/portfolio/first_row_2_mob.jpg    1x,
+                  ./images/portfolio/first_row_2_mob_2x.jpg 2x
+                "
+                media="(min-width: 428px)"
+              />
+                  </picture>
                   <img
                     src="./images/portfolio/second_row_3.jpg"
                     alt="Online Courses"
@@ -279,7 +402,7 @@
                   </p>
                 </div>
                 <div class="navigation-wrap">
-                  <h2 class="secondary-title">Online Courses</h2>
+                  <h2 class="navigation-title">Online Courses</h2>
                   <p class="top-text">Marketing</p>
                 </div></a
               >
@@ -287,6 +410,29 @@
             <li class="images-item">
               <a href="" class="images-link link">
                 <div class="images-wrap">
+                  <picture>
+                    <source
+                    srcset="
+                      ./images/portfolio/first_row_2.jpg    1x,
+                      ./images/portfolio/first_row_2_2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                  srcset="
+                    ./images/portfolio/first_row_2_tab.jpg    1x,
+                    ./images/portfolio/first_row_2_tab_2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                srcset="
+                  ./images/portfolio/first_row_2_mob.jpg    1x,
+                  ./images/portfolio/first_row_2_mob_2x.jpg 2x
+                "
+                media="(min-width: 428px)"
+              />
+                  </picture>
                   <img
                     src="./images/portfolio/third_row_1.jpg"
                     alt="Instagram Stories Concept"
@@ -298,7 +444,7 @@
                   </p>
                 </div>
                 <div class="navigation-wrap">
-                  <h2 class="secondary-title">Instagram Stories Concept</h2>
+                  <h2 class="navigation-title">Instagram Stories Concept</h2>
                   <p class="top-text">Design</p>
                 </div></a
               >
@@ -306,6 +452,29 @@
             <li class="images-item">
               <a href="" class="images-link link">
                 <div class="images-wrap">
+                  <picture>
+                    <source
+                    srcset="
+                      ./images/portfolio/first_row_2.jpg    1x,
+                      ./images/portfolio/first_row_2_2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                  srcset="
+                    ./images/portfolio/first_row_2_tab.jpg    1x,
+                    ./images/portfolio/first_row_2_tab_2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                srcset="
+                  ./images/portfolio/first_row_2_mob.jpg    1x,
+                  ./images/portfolio/first_row_2_mob_2x.jpg 2x
+                "
+                media="(min-width: 428px)"
+              />
+                  </picture>
                   <img
                     src="./images/portfolio/third_row_2.jpg"
                     alt="Organic Food"
@@ -317,7 +486,7 @@
                   </p>
                 </div>
                 <div class="navigation-wrap">
-                  <h2 class="secondary-title">Organic Food</h2>
+                  <h2 class="navigation-title">Organic Food</h2>
                   <p class="top-text">Web Site</p>
                 </div></a
               >
@@ -325,6 +494,29 @@
             <li class="images-item">
               <a href="" class="images-link link">
                 <div class="images-wrap">
+                  <picture>
+                    <source
+                    srcset="
+                      ./images/portfolio/first_row_2.jpg    1x,
+                      ./images/portfolio/first_row_2_2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                  srcset="
+                    ./images/portfolio/first_row_2_tab.jpg    1x,
+                    ./images/portfolio/first_row_2_tab_2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                srcset="
+                  ./images/portfolio/first_row_2_mob.jpg    1x,
+                  ./images/portfolio/first_row_2_mob_2x.jpg 2x
+                "
+                media="(min-width: 428px)"
+              />
+                  </picture>
                   <img
                     src="./images/portfolio/third_row_3.jpg"
                     alt="Fresh Coffee"
@@ -336,7 +528,7 @@
                   </p>
                 </div>
                 <div class="navigation-wrap">
-                  <h2 class="secondary-title">Fresh Coffee</h2>
+                  <h2 class="navigation-title">Fresh Coffee</h2>
                   <p class="top-text">Web Site</p>
                 </div></a
               >
@@ -411,15 +603,21 @@
           </ul>
         </div>
         <div class="footer-subscribe">
-            <p class="subscribe-text">Subscribe</p>
-            <form class="subscribe-wrap">
-              <label class="footer-label">
-            <input type="email" name="footer-name" class="footer-input" placeholder="E-mail">
-          </label>
-          <button type="submit" class="subscribe-btn">Subscribe
-            <svg class="subscribe-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-subscribe"></use>
-            </svg>
+          <p class="subscribe-text">Subscribe</p>
+          <form class="subscribe-wrap">
+            <label class="footer-label">
+              <input
+                type="email"
+                name="footer-name"
+                class="footer-input"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="subscribe-btn">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
             </button>
           </form>
         </div>

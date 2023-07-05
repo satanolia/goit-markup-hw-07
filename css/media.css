@@ -188,6 +188,17 @@
    .container-navigation {
     max-width: 582px;
   }
+  .navigation-btn-list {
+    flex-wrap: nowrap;
+    max-width: 586px;
+    justify-content: center;
+    gap: 24px;
+  }
+  .navigation-btn-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  
 }
 
 
@@ -324,4 +335,7 @@
 .navigation-btn-section {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.navigation-btn-list {
+  justify-content: center;
 }

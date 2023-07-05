@@ -64,41 +64,45 @@
       </div>
       <div class="mob-menu is-hidden" data-menu>
         <div>
-        <button type="button" class="menu-close-btn" data-menu-close>
-          <svg class="menu-close-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-            <ul class="mob-menu-list list">
-              <li class="mob-menu-item">
-                <a class="mob-menu-link current link" href="./index.html">Studio</a>
-              </li>
-              <li class="mob-menu-item">
-                <a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
-              </li>
-              <li class="mob-menu-item">
-                <a class="mob-menu-link link" href="">Contacts</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <address class="mob-menu-address">
-              <ul class="mob-menu-address-list list">
+          <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link current link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <address class="mob-menu-address">
+            <ul class="mob-menu-address-list list">
               <li class="mob-menu-address-item">
                 <a class="mob-menu-tel-link link" href="tel:+110001111111"
                   >+11 (000) 111-11-11</a
                 >
               </li>
-                <li class="mob-menu-address-item">
-                  <a
-                    class="mob-menu-address-link link"
-                    href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
-                </li>
-              </ul>
-            </address>
-            <ul class="mob-icon-list">
+              <li class="mob-menu-address-item">
+                <a
+                  class="mob-menu-address-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-icon-list">
             <li class="mob-icon-item">
               <a
                 href=""
@@ -262,6 +266,10 @@
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="
+                  ./images/first-employee.jpeg    1x,
+                  ./images/first-employee-2x.jpeg 2x
+                "
                 src="./images/first-employee.jpg"
                 alt="our team"
                 width="264"
@@ -324,6 +332,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/second-employee.jpeg    1x,
+                  ./images/second-employee-2x.jpeg 2x
+                "
                 src="./images/second-employee.jpg"
                 alt="our team"
                 width="264"
@@ -386,6 +398,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/third-employee.jpeg    1x,
+                  ./images/third-employee-2x.jpeg 2x
+                "
                 src="./images/third-employee.jpg"
                 alt="our team"
                 width="264"
@@ -448,6 +464,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/fourth-employee.jpeg    1x,
+                  ./images/fourth-employee-2x.jpeg 2x
+                "
                 src="./images/fourth-employee.jpg"
                 alt="our team"
                 width="264"
@@ -557,7 +577,7 @@
         </div>
       </section>
     </main>
-    
+
     <footer class="footer">
       <div class="container icon-container">
         <div class="footer-container">
@@ -624,15 +644,21 @@
           </ul>
         </div>
         <div class="footer-subscribe">
-            <p class="subscribe-text">Subscribe</p>
-            <form class="subscribe-wrap">
-              <label class="footer-label">
-            <input type="email" name="footer-name" class="footer-input" placeholder="E-mail">
-          </label>
-          <button type="submit" class="subscribe-btn">Subscribe
-            <svg class="subscribe-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-subscribe"></use>
-            </svg>
+          <p class="subscribe-text">Subscribe</p>
+          <form class="subscribe-wrap">
+            <label class="footer-label">
+              <input
+                type="email"
+                name="footer-name"
+                class="footer-input"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="subscribe-btn">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
             </button>
           </form>
         </div>
